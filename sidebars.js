@@ -13,6 +13,7 @@ module.exports = {
       items: [
         "examples/1",
         "examples/permissions",
+        "examples/initial-contract-tables",
         "examples/deferred-tx",
       ]
     },

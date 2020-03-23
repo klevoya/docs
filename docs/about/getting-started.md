@@ -29,10 +29,10 @@ import Asciinema from '@site/src/components/asciinema';
 
 ### Writing tests
 
-Hydra tests are written in JavaScript/TypeScript and it allows you to use your favourite testing library.
+Hydra tests are written in JavaScript/TypeScript using a JavaScript testing library of your choice.
 
-Navigate to your smart contracts project's root folder and compile your smart contract.
-Initialize an NPM project, install a JS testing library and then run the `init` command selecting the contracts you want to test.
+Navigate to your contract project's root folder and compile your smart contract.
+After that, initialize an NPM project, install a JS testing library and then run the `hydra init` command selecting the contracts you want to test.
 
 ```bash
 cd eos-project

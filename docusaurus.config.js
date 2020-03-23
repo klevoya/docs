@@ -1,11 +1,13 @@
+const repoName = `docs`
+
 module.exports = {
   title: 'Hydra',
   tagline: 'EOSIO testing framework',
   url: 'https://docs.klevoya.com',
-  baseUrl: '/',
+  baseUrl: process.env.NODE_ENV === `production` ? `/${repoName}/` : '/',
   favicon: 'img/favicon.ico',
   organizationName: 'klevoya', // Usually your GitHub org/user name.
-  projectName: 'hydra', // Usually your repo name.
+  projectName: 'hydra',
   themeConfig: {
     sidebarCollapsible: false,
     navbar: {

@@ -2,6 +2,6 @@
 title: CLI
 ---
 
-## init
+# init
 
-## login
+# login

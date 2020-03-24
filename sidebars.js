@@ -11,9 +11,10 @@ module.exports = {
       type: 'category',
       label: 'Examples',
       items: [
-        "examples/1",
+        "examples/overview",
         "examples/permissions",
         "examples/initial-contract-tables",
+        "examples/tokens",
         "examples/deferred-tx",
       ]
     },
@@ -22,6 +23,7 @@ module.exports = {
       label: 'CLI',
       items: [
         "cli/cli",
+        "cli/config",
       ]
     },
     {

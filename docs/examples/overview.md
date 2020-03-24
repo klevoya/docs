@@ -40,7 +40,7 @@ describe("eosio.token", () => {
 
 Note that there is _no need to manage any keys_ for the accounts, although [custom permissions](./permissions.md) can be configured to test the contract under the same permissions as in a production environment.
 
-_Once_ before any test is run, the created account's code is set to the contract template. It must have the same key as in the loaded config file.
+_Once_ before any test is run, the created account's code is set to the contract template. It must have the same key as specified in the loaded config file.
 The boilerplate also updates the account's `active` permission to include the [`eosio.code`](https://github.com/EOSIO/eos/issues/3013#issuecomment-388983168) permission - a requirement if the contract code sends actions or transactions itself.
 
 ```js

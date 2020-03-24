@@ -39,7 +39,7 @@ cd eos-project
 npm init -y
 # Install jest or another testing library
 npm i -S jest
-# adjust the "test" script in package.json to execute "jest"
+# adjust the "test" script in package.json to execute "jest --testEnvironment node"
 
 hydra init
 ```
@@ -50,6 +50,8 @@ The `init` command bootstraps your project by creating a `hydra.yml` configurati
 Then run your tests:
 
 ```bash
+npx jest --testEnvironment node
+# or simply test if test script is configured to "jest --testEnvironment node"
 npm test
 ```
 

@@ -28,10 +28,12 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'API',
+      label: 'API Reference',
       items: [
         "api/blockchain",
         "api/account",
+        "api/contract",
+        "api/types",
       ]
     },
   ]

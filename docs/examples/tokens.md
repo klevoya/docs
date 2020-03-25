@@ -3,7 +3,7 @@ title: Tokens
 ---
 
 Hydra comes with a set of predefined _contract templates_ that can be used without explicitly defining them in the [config file](../cli/config.md).
-The `eosio.token` contract is one of them, making it very easy to deploy token contracts and creating + issuing tokens to accounts.
+The `eosio.token` contract is one of them, making it very easy to deploy token contracts and creating / issuing tokens to accounts.
 
 :::note Using a different eosio.token contract
 In case there's a contract template with the `eosio.token` name defined in the [config file](../cli/config.md), it will overwrite the predefined one.

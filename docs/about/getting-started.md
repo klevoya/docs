@@ -3,7 +3,7 @@ title: Getting Started
 ---
 
 Hydra is an EOSIO smart contract testing framework that allows you to quickly get started with testing your smart contract code.
-Besides Hydra, installing additional software or running your own local blockchain node are **not** required. 
+Besides Hydra, installing additional software or running your own local blockchain node is **not** required. 
 
 ## Quick Start
 
@@ -54,6 +54,3 @@ npx jest --testEnvironment node
 # or simply test if test script is configured to "jest --testEnvironment node"
 npm test
 ```
-
-
-

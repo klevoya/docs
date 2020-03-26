@@ -3,7 +3,7 @@ title: Deferred Transactions
 ---
 
 On real EOSIO networks, when a smart contract schedules a deferred transaction, it might or might not be picked up and executed by a block producing node after the specified delay.
-This non-determinism is not desirable for testing, therefore, the deferred transaction model in Hydra is different: Deferred transaction are recorded, but not automatically executed. They can be manually executed at any time disregarding their specified delay.
+This non-determinism is not desirable for testing, therefore, the deferred transaction model in Hydra is different: Deferred transactions are recorded, but not automatically executed. They can be manually executed at any time disregarding their specified delay.
 
 ```js
 let blockchain = new Blockchain(config);

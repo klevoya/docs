@@ -2,7 +2,7 @@
 title: Blockchain
 ---
 
-The Blockchain object keeps state of all accounts and contracts.
+The Blockchain object keeps the state of all accounts and contracts.
 
 
 ## Methods
@@ -35,7 +35,7 @@ Enable or disable an EOSIO protocol feature
 
 ### contractTemplates: Dictionary<ContractTemplate\>
 
-Gets configured contract templates that can be used for setContract.
+Gets configured contract templates that can be used for [setContract](./account.md#setcontractcontract-contract-void).
 Contract templates are configured through the `config` parameter in the [constructor](./blockchain.md#constructorconfig-thydraconfig-void)
 
 ### accounts: Dictionary<[Account](./account.md)\>

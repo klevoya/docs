@@ -1,6 +1,5 @@
 ---
 title: Types
-hideInSidebar: true
 ---
 
 

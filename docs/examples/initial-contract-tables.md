@@ -3,7 +3,7 @@ title: Initial Table Data
 ---
 
 Hydra allows loading of smart contract table data which is very useful for defining the initial context the tests will run in.
-Instead of defining a sequence of actions that lead to the table state, the table state is simply defined in JSON files.
+Instead of defining a sequence of actions that results in the table state, the table state is simply defined in JSON files.
 
 ## Adding the `hydraload` action to smart contracts
 
@@ -112,6 +112,3 @@ beforeEach(async () => {
   await tester.loadFixtures();
 });
 ```
-
-
-

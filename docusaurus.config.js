@@ -18,12 +18,11 @@ module.exports = {
       },
       links: [
         {
-          to: 'docs/about/getting-started',
+          to: 'hydra',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/klevoya/docs',
           label: 'GitHub',
@@ -67,6 +66,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/klevoya/docs/edit/master/',
+          routeBasePath: '/hydra'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

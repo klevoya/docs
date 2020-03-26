@@ -27,6 +27,19 @@ type TActionAuthorization = {
 };
 ```
 
+## TTransaction
+
+```typescript
+export type TTransaction = {
+  actions: {
+    account: string;
+    name: string;
+    authorization: TActionAuthorization[];
+    data: any;
+  }[]
+};
+```
+
 ## TTransactionTrace
 
 ```typescript
@@ -69,4 +82,64 @@ type TActionTrace = {
   block_time: string; // "2000-01-01T00:00:00.000";
   account_ram_deltas: any[];
 };
+```
+
+## TDeferredTransaction
+
+```typescript
+type TDeferredTransaction = {
+  sender: string;
+  sender_id: string;
+  payer: string;
+  expiration: string;
+  ref_block_num: number;
+  ref_block_prefix: number;
+  max_net_usage_words: number;
+  max_cpu_usage_ms: number;
+  delay_sec: number;
+  context_free_actions: any[];
+  actions: TTransaction["actions"];
+  transaction_extensions: any[];
+};
+```
+
+## THydraConfig
+
+```typescript
+type TContractObject = {
+  name: string;
+  wasm: string;
+  abi: string;
+  fixturesDir?: string;
+};
+
+type THydraConfigOptions = {
+  serverBaseUrl?: string;
+  skipAuth?: boolean;
+};
+
+type THydraConfig = {
+  contracts: { [key: string]: TContractObject };
+  options: THydraConfigOptions;
+};
+```
+
+## TProtocolFeatures
+
+```typescript
+// enabled by default
+"PREACTIVATE_FEATURE"
+"ONLY_BILL_FIRST_AUTHORIZER"
+"DISALLOW_EMPTY_PRODUCER_SCHEDULE"
+"ONLY_LINK_TO_EXISTING_PERMISSION"
+"FIX_LINKAUTH_RESTRICTION"
+"RAM_RESTRICTIONS"
+// disabled by default
+"REPLACE_DEFERRED"
+"NO_DUPLICATE_DEFERRED_ID"
+"RESTRICT_ACTION_TO_SELF"
+"FORWARD_SETCODE"
+"GET_SENDER"
+"WEBAUTHN_KEY"
+"WTMSIG_BLOCK_SIGNATURES"
 ```

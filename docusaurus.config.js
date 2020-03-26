@@ -66,7 +66,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/klevoya/docs/edit/master/website/',
+            'https://github.com/klevoya/docs/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

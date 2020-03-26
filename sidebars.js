@@ -9,13 +9,13 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Examples',
+      label: 'Guides',
       items: [
-        "examples/overview",
-        "examples/permissions",
-        "examples/initial-contract-tables",
-        "examples/tokens",
-        "examples/deferred-tx",
+        "guides/overview",
+        "guides/permissions",
+        "guides/initial-contract-tables",
+        "guides/tokens",
+        "guides/deferred-tx",
       ]
     },
     {

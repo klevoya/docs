@@ -1,10 +1,15 @@
 const repoName = `docs`
 
+const url = `https://docs.klevoya.com`
+// if we use a custom domain for GitHub pages use root path `/`
+const baseUrl = /github.io/.test(url) ? `/${repoName}/` : `/`
+
 module.exports = {
   title: 'Hydra',
   tagline: 'EOSIO testing framework',
-  url: 'https://docs.klevoya.com',
-  baseUrl: process.env.NODE_ENV === `production` ? `/${repoName}/` : '/',
+  url: url,
+  // use `/` for local development
+  baseUrl: process.env.NODE_ENV === `production` ? baseUrl : '/',
   favicon: 'img/favicon.ico',
   organizationName: 'klevoya', // Usually your GitHub org/user name.
   projectName: 'hydra',

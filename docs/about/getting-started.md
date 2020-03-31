@@ -37,8 +37,8 @@ After that, initialize an NPM project, install a JS testing library and then run
 ```bash
 cd eos-project
 npm init -y
-# Install jest or another testing library
-npm i -S jest
+# Install hydra and jest or another testing library
+npm i -S @klevoya/hydra jest
 # adjust the "test" script in package.json to execute "jest --testEnvironment node"
 
 hydra init

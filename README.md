@@ -1,4 +1,4 @@
-# [Docs  🔗](https://klevoya.github.io/docs/)
+# [Docs  🔗](https://docs.klevoya.com/hydra)
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 

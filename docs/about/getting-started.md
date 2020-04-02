@@ -41,7 +41,7 @@ cd eos-project
 hydra init
 ```
 
-<Asciinema id="asciicast-u4CCaH93v6Hti0VBP8gErgskT" src="https://asciinema.org/a/u4CCaH93v6Hti0VBP8gErgskT.js"/>
+<Asciinema id="asciicast-PAxoLGM4Qck2APSvquLFcAN4T" src="https://asciinema.org/a/PAxoLGM4Qck2APSvquLFcAN4T.js"/>
 
 The `init` command also bootstraps your project by creating a `hydra.yml` configuration file and a test boilerplate in the `tests` directory.
 Then run your tests:

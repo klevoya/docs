@@ -32,25 +32,20 @@ import Asciinema from '@site/src/components/asciinema';
 Hydra tests are written in JavaScript/TypeScript using a JavaScript testing library of your choice.
 
 Navigate to your contract project's root folder and compile your smart contract.
-After that, initialize an NPM project, install a JS testing library and then run the `hydra init` command selecting the contracts you want to test.
+After that, run the `hydra init` command selecting the contracts you want to test.
+It will initialize an NPM project and set up a JavaScript testing library ([jest](https://jestjs.io/)).
 
 ```bash
 cd eos-project
-npm init -y
-# Install hydra and jest or another testing library
-npm i -S @klevoya/hydra jest
-# adjust the "test" script in package.json to execute "jest --testEnvironment node"
 
 hydra init
 ```
 
 <Asciinema id="asciicast-u4CCaH93v6Hti0VBP8gErgskT" src="https://asciinema.org/a/u4CCaH93v6Hti0VBP8gErgskT.js"/>
 
-The `init` command bootstraps your project by creating a `hydra.yml` configuration file and a test boilerplate in the `tests` directory.
+The `init` command also bootstraps your project by creating a `hydra.yml` configuration file and a test boilerplate in the `tests` directory.
 Then run your tests:
 
 ```bash
-npx jest --testEnvironment node
-# or simply test if test script is configured to "jest --testEnvironment node"
 npm test
 ```

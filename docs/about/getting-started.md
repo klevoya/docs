@@ -50,4 +50,4 @@ Then run your tests:
 npm test
 ```
 
-<Asciinema id="asciicast-nZphMXBu8Y52ZebcsKrUsdJL5" src="https://asciinema.org/a/nZphMXBu8Y52ZebcsKrUsdJL5.js" autoPlay loop />
+<Asciinema id="asciicast-kNeDMxCjx1zZM4AtjFwhxilsE" src="https://asciinema.org/a/kNeDMxCjx1zZM4AtjFwhxilsE.js" autoPlay />

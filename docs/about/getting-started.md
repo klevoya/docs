@@ -49,3 +49,5 @@ Then run your tests:
 ```bash
 npm test
 ```
+
+<Asciinema id="asciicast-nZphMXBu8Y52ZebcsKrUsdJL5" src="https://asciinema.org/a/nZphMXBu8Y52ZebcsKrUsdJL5.js" autoPlay loop />

@@ -12,7 +12,7 @@ It consists of a standard `eosio.token` contract and a simple test case for it.
 git clone git@github.com:klevoya/hello-hydra.git
 ```
 
-After installing the dependencies (`npm install`) the test in `tests/token.test.js` can be executed:
+After installing the dependencies (`npm install`) and [logging into Hydra](./getting-started.md/#setup), the test in `tests/token.test.js` can be executed:
 
 ```bash
 npm test

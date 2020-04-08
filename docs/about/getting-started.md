@@ -2,6 +2,8 @@
 title: Getting Started
 ---
 
+import Asciinema from '@site/src/components/asciinema';
+
 Hydra is an EOSIO smart contract testing framework that allows you to quickly get started with testing your smart contract code.
 Besides Hydra, installing additional software or running your own local blockchain node is **not** required. 
 
@@ -21,8 +23,6 @@ Log in to your existing [Klevoya account](https://klevoya.com) or sign up by run
 hydra login
 ```
 
-
-import Asciinema from '@site/src/components/asciinema';
 
 <Asciinema id="asciicast-nhP4pvp7hv6L6FFJu4kyUYHzc" src="https://asciinema.org/a/nhP4pvp7hv6L6FFJu4kyUYHzc.js" autoPlay />
 

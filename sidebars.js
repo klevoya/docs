@@ -5,6 +5,7 @@ module.exports = {
       label: 'About',
       items: [
         "about/getting-started",
+        "about/hello-hydra",
       ]
     },
     {

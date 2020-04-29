@@ -17,6 +17,7 @@ module.exports = {
         "guides/initial-contract-tables",
         "guides/tokens",
         "guides/deferred-tx",
+        "guides/ci",
       ]
     },
     {

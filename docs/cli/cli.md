@@ -32,7 +32,7 @@ Authenticating with hydra stores the login information in `~/.hydra/auth.json`.
 This file should be kept safe as it includes the authentication token.
 
 :::note Running Hydra in a CI pipeline
-When running tests as part of your Continous Integration workflow, it's enough to copy the `auth.json` file to the machine in secret.
+When running tests as part of your Continous Integration workflow, the CI server needs to be authenticated as well. See the [section on CI](../guides/ci.md) for more information.
 :::
 
 # logout

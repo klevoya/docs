@@ -103,7 +103,8 @@ let blockchain = new Blockchain(config);
 let tester = blockchain.createAccount(`tester`);
 tester.setContract(blockchain.contractTemplates[`eosio.token`]);
 
-// loads fixtures for the currently deployed contract
+// loads fixtures for the currently deployed contract on tester
+// no arguments loads data for all tables from the JSON files
 await tester.loadFixtures();
 
 // reset tables before each test
@@ -111,4 +112,15 @@ beforeEach(async () => {
   tester.resetTables();
   await tester.loadFixtures();
 });
+
+test(`some test that requires different initial data`, async () => {
+  // loads fixtures for `accounts` table given the data
+  await tester.loadFixtures(`accounts`, {
+      // scope: [row1, row2, ...],
+      "tester": [{"balance": "0.0000 EOS"}],
+      "tester2": [{"balance": "100.0000 EOS"}],
+  });
+  // data can still be defined and loaded from a JSON file
+  await tester.loadFixtures(`accounts`, require(`./fixtures/lots-of-balances.json`));
+})
 ```

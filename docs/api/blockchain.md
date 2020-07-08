@@ -27,6 +27,10 @@ Gets all deferred transactions
 
 Clears all deferred transactions
 
+### setCurrentTime(date: Date): void
+
+Sets the current time of the blockchain changing the value returned by `eosio::current_time_point` and similar intrinsics.
+
 ### setProtocolFeature(featureName: [TProtocolFeature](./types.md#tprotocolfeatures), enable: boolean): void
 
 Enable or disable an EOSIO protocol feature

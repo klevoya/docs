@@ -1,3 +1,5 @@
+![Deployment](https://github.com/klevoya/docs/workflows/Deployment/badge.svg)
+
 # [Docs  🔗](https://docs.klevoya.com/hydra)
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.

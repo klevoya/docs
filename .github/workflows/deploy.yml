@@ -15,10 +15,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: Install Yarn
+      run: npm install -g yarn # Extra Step
     - name: Install Packages
-      run: npm install
+      run: yarn
     - name: Build page
-      run: npm run build
+      run: yarn run build
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:

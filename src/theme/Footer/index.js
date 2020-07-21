@@ -61,8 +61,8 @@ function Footer() {
         {links && links.length > 0 && (
           <div className="row footer__links">
             {links.map((linkItem, i) => (
-              <React.Fragment>
-                <div key={i} className="col footer__col">
+              <React.Fragment key={i}>
+                <div className="col footer__col">
                   {linkItem.title != null ? (
                     <h4 className={`footer__title ${styles.footerTitle}`}>{linkItem.title}</h4>
                   ) : null}

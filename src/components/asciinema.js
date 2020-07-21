@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 
 const useScript = ({ ref, src, id, rows = 16, autoPlay = false, loop = false }) => {
   useEffect(() => {
-    console.log(ref.current)
     if(!ref.current) return
     const script = document.createElement('script');
 

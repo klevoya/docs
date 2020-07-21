@@ -45,7 +45,7 @@ hydra logout
 
 # init
 
-A scaffolding command creating the [configuration file](./config.md), the boilerplate test files, and optionally [JSON fixture files](../examples/initial-contract-tables.md).
+A scaffolding command creating the [configuration file](./config.md), the boilerplate test files, and optionally [JSON fixture files](../guides/initial-contract-tables.md).
 It's safe to run the `init` command repeatedly to update projects files as the configuration will be merged and test files will not be overwritten.
 
 #### Options

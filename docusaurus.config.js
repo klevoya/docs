@@ -75,7 +75,9 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/klevoya/docs/edit/master/',
-          routeBasePath: '/hydra'
+          // makes all docs pages start with /routeBasePath/
+          routeBasePath: 'hydra',
+          // path: 'hydra',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

@@ -16,6 +16,7 @@ module.exports = {
         "guides/permissions",
         "guides/initial-contract-tables",
         "guides/tokens",
+        "guides/contract-prints",
         "guides/deferred-tx",
         "guides/ci",
       ]

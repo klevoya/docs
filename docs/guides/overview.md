@@ -92,15 +92,15 @@ it("can send the create + issue action", async () => {
 });
 ```
 
-Sending transactions from the [Account object](../api/account.md) returns a transaction trace that can be used to reason about.
+Sending transactions from the [Account object](../api/account.md) returns a [transaction trace](../api/types.md#ttransactiontrace) that can be used to reason about.
 
 ```js
 it("prints the correct thing fast", async () => {
   expect.assertions(2);
 
-  const txTrace = await tester.contract.print();
+  const txTrace = await tester.contract.hello();
 
-  // get all print output from initial 'print' action + inline actions
+  // get all print output from initial 'hello' action + inline actions
   const consoleOutput = txTrace.action_traces.map(t => t.console).join(``)
 
   expect(consoleOutput).toBe("this was printed from the contract");

@@ -23,7 +23,7 @@ it("prints the correct message", async () => {
     user: `bob`,
   });
 
-  // get all print output from the first action ('hello' action)
+  // get the print output of the first action ('hello' action)
   const consoleOutput = txTrace.action_traces[0].console;
 
   expect(consoleOutput).toBe("Hello bob!");
@@ -46,7 +46,7 @@ it("prints the correct message", async () => {
     [{ actor: `alice`, permission: `active` }]
   );
 
-  // get all print output from the transfer action and its created notifications
+  // get all print output of the transfer action and its created notifications
   const consoleOutput = txTrace.action_traces.map((t) => t.console).join(``);
 
   // print it to test runner's stdout

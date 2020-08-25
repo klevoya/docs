@@ -17,9 +17,11 @@ Sets contract and ABI of this account
 
 Gets the table rows of the specified table, keyed by scopes
 
-### resetTables(): void
+### resetTables(...tableNames: string[]): void
 
-Deletes all of this account's table data
+Deletes this account's table data.
+- The table names to delete can be passed as arguments.
+- If no arguments are passed, deletes all table data of this account.
 
 ### loadFixtures(tableName?: string, fixtureScopeRowsMap?: Dictionary<TableRowStructure[]\>): Promise<void\>
 

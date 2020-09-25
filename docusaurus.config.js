@@ -21,7 +21,7 @@ module.exports = {
         alt: 'Hydra Logo',
         src: 'img/logo.png',
       },
-      links: [
+      items: [
         {
           to: 'hydra',
           activeBasePath: 'docs',

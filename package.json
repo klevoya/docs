@@ -4,14 +4,15 @@
   "private": true,
   "scripts": {
     "start": "docusaurus start",
+    "clear": "docusaurus clear",
     "build": "docusaurus build && npm run build:post",
     "build:post": "cp CNAME build/CNAME",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.58",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.58",
+    "@docusaurus/core": "^2.0.0-alpha.69",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.69",
     "classnames": "^2.2.6",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"

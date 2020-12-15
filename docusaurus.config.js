@@ -1,49 +1,55 @@
-const repoName = `docs`
+const repoName = `docs`;
 
-const url = `https://docs.klevoya.com`
+const url = `https://docs.klevoya.com`;
 // if we use a custom domain for GitHub pages use root path `/`
-const baseUrl = /github.io/.test(url) ? `/${repoName}/` : `/`
+const baseUrl = /github.io/.test(url) ? `/${repoName}/` : `/`;
 
 module.exports = {
-  title: 'Hydra',
-  tagline: 'EOSIO testing framework',
+  title: "Klevoya Docs",
+  tagline: "EOSIO testing framework",
   url: url,
   // use `/` for local development
-  baseUrl: process.env.NODE_ENV === `production` ? baseUrl : '/',
-  favicon: 'img/favicon.ico',
-  organizationName: 'klevoya', // Usually your GitHub org/user name.
-  projectName: 'hydra',
+  baseUrl: process.env.NODE_ENV === `production` ? baseUrl : "/",
+  favicon: "img/favicon.ico",
+  organizationName: "klevoya", // Usually your GitHub org/user name.
+  projectName: "klevoya",
   themeConfig: {
     sidebarCollapsible: false,
     navbar: {
-      title: 'Hydra',
+      title: "Klevoya Docs",
       logo: {
-        alt: 'Hydra Logo',
-        src: 'img/logo.png',
+        alt: "Klevoya Logo",
+        src: "img/logo.png",
       },
       items: [
         {
-          to: 'hydra',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          to: "hydra",
+          activeBasePath: "hydra",
+          label: "Hydra",
+          position: "left",
         },
         {
-          href: 'https://github.com/klevoya/docs',
-          label: 'GitHub',
-          position: 'right',
+          to: "inspect",
+          activeBasePath: "inspect",
+          label: "Inspect",
+          position: "left",
+        },
+        {
+          href: "https://github.com/klevoya/docs",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     prism: {
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/dracula'),
+      theme: require("prism-react-renderer/themes/github"),
+      darkTheme: require("prism-react-renderer/themes/dracula"),
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Social',
+          title: "Social",
           items: [
             // {
             //   label: 'Blog',
@@ -58,8 +64,8 @@ module.exports = {
             //   href: 'https://twitter.com/docusaurus',
             // },
             {
-              label: 'Telegram',
-              href: 'https://t.me/klevoya',
+              label: "Telegram",
+              href: "https://t.me/klevoya",
             },
           ],
         },
@@ -69,19 +75,30 @@ module.exports = {
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/klevoya/docs/edit/master/',
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl: "https://github.com/klevoya/docs/edit/master/",
           // makes all docs pages start with /routeBasePath/
-          routeBasePath: 'hydra',
+          routeBasePath: "hydra",
           // path: 'hydra',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
+      },
+    ],
+  ],
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "inspect",
+        path: "./inspect", // Path to data on filesystem, relative to site dir.
+        routeBasePath: "inspect", // URL Route.
+        include: ["**/*.md"],
+        sidebarPath: require.resolve("./sidebarsInspect.js"),
       },
     ],
   ],

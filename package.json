@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "docusaurus start",
+    "serve": "docusaurus serve",
     "clear": "docusaurus clear",
     "build": "docusaurus build && npm run build:post",
     "build:post": "cp CNAME build/CNAME",

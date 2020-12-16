@@ -4,7 +4,7 @@ title: Getting Started
 
 import Asciinema from '@site/src/components/asciinema';
 
-Inspect is an automatic vulnerability scanner for your EOSIO smart contracts.
+**Inspect** is an automatic vulnerability scanner for your EOSIO smart contracts.
 Inspect makes finding vulnerabilities in your EOSIO smart contracts easy to do within your development workflow. Giving you peace of mind before you deploy on-chain.
 
 ## Quick Start

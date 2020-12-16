@@ -4,7 +4,7 @@ title: Getting Started
 
 import Asciinema from '@site/src/components/asciinema';
 
-**Hydra** is an EOSIO smart contract testing framework that allows you to quickly get started with testing your smart contract code.
+Hydra is an EOSIO smart contract testing framework that allows you to quickly get started with testing your smart contract code.
 Besides Hydra, installing additional software or running your own local blockchain node is **not** required. 
 
 ## Quick Start

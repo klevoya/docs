@@ -51,18 +51,22 @@ module.exports = {
         {
           title: "Social",
           items: [
-            // {
-            //   label: 'Blog',
-            //   to: 'blog',
-            // },
-            // {
-            //   label: 'GitHub',
-            //   href: 'https://github.com/facebook/docusaurus',
-            // },
-            // {
-            //   label: 'Twitter',
-            //   href: 'https://twitter.com/docusaurus',
-            // },
+            {
+              label: 'Blog',
+              to: 'https://klevoya.com/blog',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/klevoya',
+            },
+            {
+              label: 'Medium',
+              href: 'https://medium.com/@klevoya',
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/klevoya',
+            },
             {
               label: "Telegram",
               href: "https://t.me/klevoya",

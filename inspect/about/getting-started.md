@@ -4,50 +4,47 @@ title: Getting Started
 
 import Asciinema from '@site/src/components/asciinema';
 
-Hydra is an EOSIO smart contract testing framework that allows you to quickly get started with testing your smart contract code.
-Besides Hydra, installing additional software or running your own local blockchain node is **not** required. 
+Inspect is an automatic vulnerability scanner for your EOSIO smart contracts.
+Inspect makes finding vulnerabilities in your EOSIO smart contracts easy to do within your development workflow. Giving you peace of mind before you deploy on-chain.
 
 ## Quick Start
 
 ### Setup
 
-Hydra is a Node.js library, so make sure [Node.js/NPM](https://nodejs.org/en/download/) is installed.
+Inspect is currently accessible through a **CLI**.
+This CLI is a Node.js library, so make sure [Node.js/NPM](https://nodejs.org/en/download/) is installed.
 
 ```bash
-npm i -g @klevoya/hydra
+npm i -g @klevoya/inspect
 ```
 
 Log in to your existing [Klevoya account](https://klevoya.com) or sign up by running the `login` command and following the instructions:
 
 ```bash
-hydra login
+inspect login
 ```
 
 
-<Asciinema id="asciicast-nhP4pvp7hv6L6FFJu4kyUYHzc" src="https://asciinema.org/a/nhP4pvp7hv6L6FFJu4kyUYHzc.js" autoPlay />
+### Scan smart contracts for vulnerabilities
 
-
-### Writing tests
-
-Hydra tests are written in JavaScript/TypeScript using a JavaScript testing library of your choice.
-
-Navigate to your contract project's root folder and compile your smart contract.
-After that, run the `hydra init` command selecting the contracts you want to test.
-It will initialize an NPM project and set up a JavaScript testing library ([jest](https://jestjs.io/)).
+Once logged in to the CLI, you can analyse your compiled `.wasm` smart contracts by running the `inspect check` command.
+This uploads the compiled smart contract to our server and queues an analysis.
 
 ```bash
-cd eos-project
-
-hydra init
+inspect check /path/to/contract.wasm
 ```
 
-<Asciinema id="asciicast-PAxoLGM4Qck2APSvquLFcAN4T" src="https://asciinema.org/a/PAxoLGM4Qck2APSvquLFcAN4T.js"/>
 
-The `init` command also bootstraps your project by creating a `hydra.yml` configuration file and a test boilerplate in the `tests` directory.
-Then run your tests:
+### Checking reports
+
+The analysis of large contracts can take several minutes.
+Each report can be reviewed individually at any time by running the `inspect reports` command.
 
 ```bash
-npm test
+inspect reports # lists all reports
+inspect reports 123 # lists the report with the specified report id
 ```
 
-<Asciinema id="asciicast-kNeDMxCjx1zZM4AtjFwhxilsE" src="https://asciinema.org/a/kNeDMxCjx1zZM4AtjFwhxilsE.js" autoPlay />
+The result will be a list of potential traces that have been found for [common EOSIO vulnerabilities](https://github.com/klevoya/eosio-wcr-registry).
+
+<!-- <Asciinema id="asciicast-PAxoLGM4Qck2APSvquLFcAN4T" src="https://asciinema.org/a/PAxoLGM4Qck2APSvquLFcAN4T.js"/> -->

@@ -10,7 +10,7 @@ npm install --global @klevoya/hydra
 
 # help
 
-The `helps` command prints the current Hydra version and a description of commands that can be run.
+The `help` command prints the current Hydra version and a description of commands that can be run.
 
 ```bash
 hydra help

@@ -39,5 +39,12 @@ module.exports = {
         "api/types",
       ]
     },
+    {
+      type: 'category',
+      label: 'LiquidApps',
+      items: [
+        "liquidapps/vram",
+      ]
+    },
   ]
 };

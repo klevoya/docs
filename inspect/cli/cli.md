@@ -65,6 +65,8 @@ The `reports` command lists all finished analysis reports.
 
 #### Optional Arguments
 
+It optionally accepts a single report ID to view instead.
+
 | Option      | Description             |
 | ----------- | ----------------------- |
 | `report-id` | ID of a report to view |
@@ -75,4 +77,24 @@ inspect reports [report-id]
 # Examples
 inspect reports
 inspect reports 123
+```
+
+# clear
+
+The `clear` command deletes previous reports.
+
+#### Optional Arguments
+
+By default, the command deletes all reports. It optionally accepts a list of report IDs to delete.
+
+| Option      | Description             |
+| ----------- | ----------------------- |
+| `report-ids` | A list of report IDs to delete |
+
+```bash
+inspect clear [report-id1 report-id2 ...]
+
+# Examples
+inspect clear # deletes all reports
+inspect clear 123 321 456
 ```
